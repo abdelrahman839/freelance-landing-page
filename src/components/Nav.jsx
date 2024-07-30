@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { FiMenu } from "react-icons/fi";
-import { headerLogo } from "../assets/images";
+import { logoDark, logoWhite } from "../assets/images";
 import { navLinks } from "../assets/constants/index.js";
 
 const Nav = () => {
@@ -29,9 +29,14 @@ const Nav = () => {
         isScrolled ? "bg-black" : "bg-transparent"
       }`}
     >
-      <nav className="flex lg:justify-between items-center justify-between items-center max-container">
+      <nav className="flex lg:justify-between justify-between items-center max-container">
         <a href="/">
-          <img src={headerLogo} alt="logo" width={200} height={10} />
+          <img
+            src={isScrolled ? logoDark : logoWhite}
+            alt="logo"
+            width={200}
+            height={10}
+          />
         </a>
         <ul className="flex-1 flex justify-center items-center gap-28 max-lg:hidden">
           {navLinks.map((item) => (

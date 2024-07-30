@@ -25,8 +25,13 @@ import thumbnailShoe1 from "./thumbnail-shoe1.svg";
 import thumbnailShoe2 from "./thumbnail-shoe2.svg";
 import thumbnailShoe3 from "./thumbnail-shoe3.svg";
 
+import logoDark from './logo-dark.png'
+import logoWhite from './logo-white.png'
+
 export {
   hero,
+  logoWhite,
+  logoDark,
   bigShoe2,
   bigShoe3,
   customer1,
