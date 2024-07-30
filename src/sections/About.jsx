@@ -5,8 +5,17 @@ const About = () => {
   return (
     <section
       id="about-us"
-      className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container"
+      className="flex justify-between items-center max-lg:flex-col-reverse gap-10 w-full max-container"
     >
+      <div className={`flex-1 flex  justify-center items-center w-full `}>
+        <img
+          src={about}
+          alt="about"
+          width={550}
+          height={600}
+          className="object-contain rounded-lg"
+        />
+      </div>
       <div className="flex flex-1 flex-col">
         <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
           <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-3">
@@ -24,15 +33,6 @@ const About = () => {
         {/* <p className="mt-6 lg:max-w-lg info-text">
           Our dedication to detail and excellence ensures your satisfaction
         </p> */}
-      </div>
-      <div className={`flex-1 flex justify-center items-center w-full `}>
-        <img
-          src={about}
-          alt="about"
-          width={550}
-          height={600}
-          className="object-contain rounded-lg"
-        />
       </div>
     </section>
   );

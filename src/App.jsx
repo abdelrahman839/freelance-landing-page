@@ -8,10 +8,10 @@ const App = () => (
       <Hero />
     </section>
     <section className="padding">
-      <Products />
+      <About />
     </section>
     <section className="padding">
-      <About />
+      <Products />
     </section>
     <section className="padding">
       <Quote />
