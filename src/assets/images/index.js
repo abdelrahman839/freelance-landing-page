@@ -1,4 +1,4 @@
-import bigShoe1 from "./big-shoe1.png";
+import hero from "./hero.png";
 import bigShoe2 from "./big-shoe2.png";
 import bigShoe3 from "./big-shoe3.png";
 
@@ -10,11 +10,11 @@ import headerLogo from "./header-logo.svg";
 
 import offer from "./offer.svg";
 
-import shoe4 from "./shoe4.svg";
-import shoe5 from "./shoe5.svg";
-import shoe6 from "./shoe6.svg";
-import shoe7 from "./shoe7.svg";
-import shoe8 from "./shoe8.svg";
+import product1 from "./product1.png";
+import product2 from "./product2.png";
+import product3 from "./product3.png";
+import product4 from "./product4.png";
+import about from "./about.png";
 import shoe9 from "./shoe9.svg";
 import shoe10 from "./shoe10.svg";
 import shoe11 from "./shoe11.svg";
@@ -26,7 +26,7 @@ import thumbnailShoe2 from "./thumbnail-shoe2.svg";
 import thumbnailShoe3 from "./thumbnail-shoe3.svg";
 
 export {
-  bigShoe1,
+  hero,
   bigShoe2,
   bigShoe3,
   customer1,
@@ -34,11 +34,11 @@ export {
   footerLogo,
   headerLogo,
   offer,
-  shoe4,
-  shoe5,
-  shoe6,
-  shoe7,
-  shoe8,
+  product1,
+  product2,
+  product3,
+  product4,
+  about,
   shoe9,
   shoe10,
   shoe11,

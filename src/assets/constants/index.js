@@ -5,15 +5,18 @@ import {
   support,
   truckFast,
   twitter,
+  bag,
+  face,
+  category
 } from "../icons";
 import {
-  bigShoe1,
+  hero,
   bigShoe2,
   bigShoe3,
-  shoe4,
-  shoe5,
-  shoe6,
-  shoe7,
+  product1,
+  product2,
+  product3,
+  product4,
   thumbnailShoe1,
   thumbnailShoe2,
   thumbnailShoe3,
@@ -30,7 +33,7 @@ export const navLinks = [
 export const shoes = [
   {
     thumbnail: thumbnailShoe1,
-    bigShoe: bigShoe1,
+    bigShoe: hero,
   },
   {
     thumbnail: thumbnailShoe2,
@@ -44,22 +47,22 @@ export const shoes = [
 
 export const products = [
   {
-    imgURL: shoe4,
+    imgURL: product1,
     name: "Chuck Taylor All Star",
     price: "100.20 €",
   },
   {
-    imgURL: shoe5,
+    imgURL: product2,
     name: "Run Star Hike Sequins",
     price: "190.00 €",
   },
   {
-    imgURL: shoe6,
+    imgURL: product3,
     name: "Chuck Taylor All Star",
     price: "120.20 €",
   },
   {
-    imgURL: shoe7,
+    imgURL: product4,
     name: "Chuck 70 Y2K Heart",
     price: "130.00 €",
   },
@@ -68,19 +71,28 @@ export const products = [
 export const services = [
   {
     imgURL: truckFast,
-    label: "Free shipping",
-    subtext: "Enjoy seamless shopping with our complimentary shipping service.",
+    label: "Wide Variety of Products",
+    subtext: "Offer a diverse selection of premium dry fruits including almonds, cashews, pistachios, raisins, dates, and more.",
   },
   {
-    imgURL: shieldTick,
-    label: "Secure Payment",
-    subtext:
-      "Experience worry-free transactions with our secure payment options.",
+    imgURL: face,
+    label: "Quality Assurance",
+    subtext: "Ensure high-quality standards through rigorous sourcing and quality control processes to deliver fresh and flavorful dry fruits.",
   },
   {
     imgURL: support,
-    label: "Love to help you",
-    subtext: "Our dedicated team is here to assist you every step of the way.",
+    label: "Customizable Gift Baskets",
+    subtext: "Provide options for customizable gift baskets or packages, perfect for special occasions or corporate gifts.",
+  },
+  {
+    imgURL: category,
+    label: "Nutritional Information",
+    subtext: " Provide detailed nutritional information for each product, helping customers make informed choices about their purchases.",
+  },
+  {
+    imgURL: bag,
+    label: "Customized Packaging",
+    subtext: "Offer customizable packaging options for gift baskets or personal orders, ensuring a personalized touch for every occasion.",
   },
 ];
 
