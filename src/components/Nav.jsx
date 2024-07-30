@@ -25,7 +25,7 @@ const Nav = () => {
 
   return (
     <header
-      className={`padding-x py-2 z-20 w-full fixed top-0 transition-all duration-300 ${
+      className={`padding-x py-4 z-20 w-full fixed top-0 transition-all duration-300 ${
         isScrolled ? "bg-black" : "bg-transparent"
       }`}
     >
@@ -43,7 +43,9 @@ const Nav = () => {
             <li key={item.label}>
               <a
                 href={item.href}
-                className="font-montserrat leading-normal text-lg text-slate-400"
+                className={`font-montserrat leading-normal text-lg ${
+                  isScrolled ? "text-white" : "text-black"
+                } `}
               >
                 {item.label}
               </a>
@@ -74,7 +76,7 @@ const Nav = () => {
                 <li key={item.label} className="mb-10">
                   <a
                     href={item.href}
-                    className="font-montserrat leading-normal text-lg text-slate-400"
+                    className="font-montserrat leading-normal text-lg text-white"
                   >
                     {item.label}
                   </a>

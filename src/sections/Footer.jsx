@@ -1,6 +1,7 @@
 import { footerLinks, socialMedia } from "../assets/constants";
 import { copyrightSign } from "../assets/icons";
 import { logoDark } from "../assets/images";
+import Contact from "../components/contact";
 
 const Footer = () => {
   return (
@@ -11,8 +12,9 @@ const Footer = () => {
             <img src={logoDark} width={250} height={46} alt="logo" />
           </a>
           <p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">
-            Get shoes ready for the new term at your nearest Converse store.
-            Find Your perfect Size In Store. Get Rewards
+            Discover a variety of nutritious options at your nearest Mostafa
+            Groub outlet. Find the perfect blend for your health goals. Enjoy
+            exclusive rewards with every purchase.
           </p>
           <div className="flex items-center gap-5 mt-8">
             {socialMedia.map((icon) => (
@@ -25,7 +27,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
+        <div className="flex  justify-between lg:gap-10 gap-20 flex-wrap">
           {footerLinks.map((section) => (
             <div key={section.title}>
               <h4 className="text-white font-montserrat text-2xl leading-normal font-medium mb-6">
@@ -43,6 +45,9 @@ const Footer = () => {
               </ul>
             </div>
           ))}
+        </div>
+        <div className="flex flex-1 w-full">
+          <Contact />
         </div>
       </div>
       <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center">

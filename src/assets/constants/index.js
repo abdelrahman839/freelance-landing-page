@@ -23,10 +23,10 @@ import {
 
 export const navLinks = [
   { href: "#home", label: "Home" },
-  { href: "#about-us", label: "About Us" },
-  { href: "#services", label: "Services" },
   { href: "#products", label: "Products" },
+  { href: "#about-us", label: "About Us" },
   { href: "#quote", label: "Send Quote" },
+  { href: "#services", label: "Services" },
 ];
 
 export const shoes = [
