@@ -69,9 +69,9 @@ const Nav = () => {
               onClick={() => setMenu(false)}
               className="text-white mt-0 text-3xl cursor-pointer"
             />
-            <ul className="flex flex-1 flex-col justify-evenly">
+            <ul className="flex flex-1 flex-col justify-start">
               {navLinks.map((item) => (
-                <li key={item.label}>
+                <li key={item.label} className="mb-10">
                   <a
                     href={item.href}
                     className="font-montserrat leading-normal text-lg text-slate-400"

@@ -47,22 +47,22 @@ export const shoes = [
 export const products = [
   {
     imgURL: product1,
-    name: "Chuck Taylor All Star",
+    name: "Dried pineapple",
     price: "100.20 €",
   },
   {
     imgURL: product2,
-    name: "Run Star Hike Sequins",
+    name: "Dried Kiwi",
     price: "190.00 €",
   },
   {
     imgURL: product3,
-    name: "Chuck Taylor All Star",
+    name: "Dried Apricot",
     price: "120.20 €",
   },
   {
     imgURL: product4,
-    name: "Chuck 70 Y2K Heart",
+    name: "Dried Mango Slice",
     price: "130.00 €",
   },
 ];
