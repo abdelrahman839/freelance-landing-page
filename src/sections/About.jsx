@@ -1,5 +1,4 @@
 import { about } from "../assets/images";
-import Button from "../components/Button";
 
 const About = () => {
   return (

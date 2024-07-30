@@ -59,7 +59,7 @@ const Contact = () => {
   };
 
   return (
-    <div className={`w-full p-4 rounded-[20px] shadow-3xl bg-gray-400`}>
+    <div className={`w-full p-4 rounded-[20px] shadow-3xl bg-purple-900`}>
       <div className="">
         <form
           ref={formRef}

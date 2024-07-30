@@ -46,7 +46,10 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-1 w-full">
+        <div className="flex flex-col flex-1 w-full">
+          <h4 className="text-white font-montserrat text-2xl leading-normal font-medium mb-6">
+            Contact Us
+          </h4>
           <Contact />
         </div>
       </div>
