@@ -100,12 +100,10 @@ export const footerLinks = [
   {
     title: "Products",
     links: [
-      { name: "Chuck Taylor All Star", link: "/" },
-      { name: "Run Star Hike Platform", link: "/" },
-      { name: "Chuck 70 Tri-Color", link: "/" },
-      { name: "Star Player 76", link: "/" },
-      { name: "Chuck Taylor All Star Lift Platform", link: "/" },
-      { name: "Run Star Legacy Chelsea CX", link: "/" },
+      { name: "Dried pineapple", href:"#products" },
+      { name: "Dried Kiwi", href: "#products" },
+      { name: "Dried Apricot", href: "#products" },
+      { name: "Dried Mango Slice", href: "#products" },
     ],
   },
 

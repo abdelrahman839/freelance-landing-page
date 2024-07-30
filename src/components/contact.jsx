@@ -73,7 +73,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="Your Name"
-              className="bg-white py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-white py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -83,7 +83,7 @@ const Contact = () => {
               value={form.phone}
               onChange={handleChange}
               placeholder="Your Number"
-              className="bg-white py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-white py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -93,7 +93,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="E-Mail"
-              className="bg-white py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-white py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -103,7 +103,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="Your Message?"
-              className="bg-white py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-white py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
             />
           </label>
 
