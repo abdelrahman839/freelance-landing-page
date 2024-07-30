@@ -1,7 +1,6 @@
 import {
   facebook,
   instagram,
-  shieldTick,
   support,
   truckFast,
   twitter,
@@ -27,7 +26,7 @@ export const navLinks = [
   { href: "#about-us", label: "About Us" },
   { href: "#services", label: "Services" },
   { href: "#products", label: "Products" },
-  { href: "#contact-us", label: "Contact Us" },
+  { href: "#quote", label: "Send Quote" },
 ];
 
 export const shoes = [

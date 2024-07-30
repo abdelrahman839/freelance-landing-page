@@ -1,5 +1,5 @@
 import Nav from "./components/Nav";
-import { Hero, About, Products, Services, Footer } from "./sections";
+import { Hero, About, Products, Services, Footer,Quote } from "./sections";
 
 const App = () => (
   <main className="relative">
@@ -16,6 +16,9 @@ const App = () => (
     <section className="padding-x py-10">
       <Services />
     </section>
+    <section className="padding">
+      <Quote />
+    </section>
     <section className="padding bg-black padding-x padding-y pb-8">
       <Footer />
     </section>
@@ -24,9 +27,7 @@ const App = () => (
     </section>
    
     
-    <section className="padding">
-      <SpecialOffer />
-    </section>
+  
     <section className="bg-pale-blue padding">
       <CustomerReviews />
     </section>
