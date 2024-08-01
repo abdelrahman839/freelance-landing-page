@@ -20,7 +20,7 @@ const Contact = () => {
       [name]: value,
     });
   };
-console.log(form)
+  console.log(form);
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -30,11 +30,13 @@ console.log(form)
         "service_wco8xrt",
         "template_yjvrfus",
         {
+          form_type: "you got a new quate",
           from_name: form.name,
           to_name: "Mr Mostafa Group",
           from_email: form.email,
           to_email: "abdelrahmanabdallah9800@gmail.com",
           message: form.message,
+          phone: form.phone,
         },
         "9A-nUTcJBhbGcoAKZ"
       )
