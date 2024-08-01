@@ -1,5 +1,5 @@
 import { footerWhatsAppMesage } from "../assets/constants";
-import { FaWhatsapp } from "react-icons/fa"; // Import the WhatsApp icon from React Icons
+import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsApp = () => {
   const openWhatsApp = () => {

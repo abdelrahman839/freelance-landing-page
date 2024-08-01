@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { FiMenu } from "react-icons/fi";
 import { logoDark, logoWhite } from "../assets/images";
-import { navLinks } from "../assets/constants/index.js";
+import { navLinks, socialMedia } from "../assets/constants/index.js";
 
 const Nav = () => {
   const [isSideMenuOpen, setMenu] = useState(false);
@@ -73,7 +73,7 @@ const Nav = () => {
             />
             <ul className="flex flex-1 flex-col justify-start">
               {navLinks.map((item) => (
-                <li key={item.label} className="mb-10">
+                <li key={item.label} className="mb-7">
                   <a
                     href={item.href}
                     className="font-montserrat leading-normal text-lg text-white"
@@ -83,6 +83,19 @@ const Nav = () => {
                 </li>
               ))}
             </ul>
+            <div>
+              <div className="flex w-fill items-center  justify-between mb-5">
+                {socialMedia.map((icon) => (
+                  <div
+                    key={icon.src}
+                    className="flex  justify-center items-center w-9 h-9 bg-white rounded-full"
+                  >
+                    <img src={icon.src} alt={icon.alt} width={24} height={24} />
+                  </div>
+                ))}
+              </div>
+              {/* <img src={logoDark} alt="logo" width={200} height={10} /> */}
+            </div>
           </section>
         </div>
       </nav>

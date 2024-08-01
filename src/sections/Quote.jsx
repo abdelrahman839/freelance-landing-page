@@ -16,8 +16,8 @@ const Quote = () => {
         <p className="mt-4 lg:max-w-lg info-text font-bold">
           Why sending a quote?
         </p>
-        <p className="mt-2">
-          <ul class="list-disc ml-7">
+        <div className="mt-2">
+          <ul className="list-disc ml-7">
             <li className=" info-text ">
               Get pricing based on your exact requirements and quantities.
             </li>
@@ -29,7 +29,7 @@ const Quote = () => {
               Receive a clear and detailed quote with no hidden fees.
             </li>
           </ul>
-        </p>
+        </div>
       </div>
       <div className={`flex-1 flex justify-center items-center w-full `}>
         <Contact />
