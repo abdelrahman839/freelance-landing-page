@@ -100,7 +100,7 @@ export const footerLinks = [
   {
     title: "Products",
     links: [
-      { name: "Dried pineapple", href:"#products" },
+      { name: "Dried pineapple", href: "#products" },
       { name: "Dried Kiwi", href: "#products" },
       { name: "Dried Apricot", href: "#products" },
       { name: "Dried Mango Slice", href: "#products" },
@@ -108,6 +108,11 @@ export const footerLinks = [
   },
 
 ];
+
+export const footerWhatsAppMesage = {
+  phone: "+201224940335",
+  message: 'Hello, I am interested in learning more about your tomato paste products. Could you please provide more details? Thank you.'
+}
 
 export const socialMedia = [
   { src: facebook, alt: "facebook logo" },

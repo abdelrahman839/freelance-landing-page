@@ -1,4 +1,7 @@
-import { footerLinks, socialMedia } from "../assets/constants";
+import {
+  footerLinks,
+  socialMedia,
+} from "../assets/constants";
 import { copyrightSign } from "../assets/icons";
 import { logoDark } from "../assets/images";
 import Contact from "../components/contact";

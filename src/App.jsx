@@ -1,4 +1,5 @@
 import Nav from "./components/Nav";
+import WhatsApp from "./components/WhatsApp";
 import { Hero, About, Products, Services, Footer, Quote } from "./sections";
 
 const App = () => (
@@ -23,6 +24,7 @@ const App = () => (
     <section className="padding bg-black padding-x padding-y pb-8">
       <Footer />
     </section>
+    <WhatsApp />
   </main>
 );
 
