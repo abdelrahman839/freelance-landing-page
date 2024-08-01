@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="max-container">
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
         <div className="flex flex-col items-start">
-          <a href="/">
+          <a href="#home">
             <img src={logoDark} width={250} height={46} alt="logo" />
           </a>
           <p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">

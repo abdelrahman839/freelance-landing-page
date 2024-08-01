@@ -30,7 +30,7 @@ const Nav = () => {
       }`}
     >
       <nav className="flex lg:justify-between justify-between items-center max-container">
-        <a href="/">
+        <a href="#home">
           <img
             src={isScrolled ? logoDark : logoWhite}
             alt="logo"
