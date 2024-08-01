@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -20,42 +20,42 @@ const Contact = () => {
       [name]: value,
     });
   };
-
+console.log(form)
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    // emailjs
-    //   .send(
-    //     "service_viyexs7",
-    //     "template_yjvrfus",
-    //     {
-    //       from_name: form.name,
-    //       to_name: "Fly",
-    //       from_email: form.email,
-    //       to_email: "asdddghjh@gmail.com",
-    //       message: form.message,
-    //     },
-    //     "9A-nUTcJBhbGcoAKZ"
-    //   )
-    //   .then(
-    //     () => {
-    //       setLoading(false);
-    //       alert("Thank you. We will get back to you as soon as possible.");
+    emailjs
+      .send(
+        "service_wco8xrt",
+        "template_yjvrfus",
+        {
+          from_name: form.name,
+          to_name: "Mr Mostafa Group",
+          from_email: form.email,
+          to_email: "abdelrahmanabdallah9800@gmail.com",
+          message: form.message,
+        },
+        "9A-nUTcJBhbGcoAKZ"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. We will get back to you as soon as possible.");
 
-    //       setForm({
-    //         name: "",
-    //         email: "",
-    //         message: "",
-    //       });
-    //     },
-    //     (error) => {
-    //       setLoading(false);
-    //       console.error(error);
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
 
-    //       alert("Ahh, something went wrong. Please try again.");
-    //     }
-    //   );
+          alert("Ahh, something went wrong. Please try again.");
+        }
+      );
   };
 
   return (
