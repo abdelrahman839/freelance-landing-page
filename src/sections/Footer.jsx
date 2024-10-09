@@ -1,33 +1,39 @@
-import {
-  footerLinks,
-  socialMedia,
-} from "../assets/constants";
+import { footerLinks, socialMedia } from "../assets/constants";
 import { copyrightSign } from "../assets/icons";
 import { logoDark } from "../assets/images";
-import Contact from "../components/contact";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin, FaFacebookF, FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="max-container">
+    <footer className="max-container" id="footer">
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
-        <div className="flex flex-col items-start">
+        <div className="flex flex-1 flex-col items-start">
           <a href="#home">
             <img src={logoDark} width={250} height={46} alt="logo" />
           </a>
-          <p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">
+          <p className="mt-6 text-base leading-7 font-montserrat text-white-400 ">
+            Discover a variety of nutritious options at your nearest Mostafa
+            Groub outlet. Find the perfect blend for your health goals. Enjoy
+            exclusive rewards with every purchase. Discover a variety of nutritious options at your nearest Mostafa
+            Groub outlet. Find the perfect blend for your health goals. Enjoy
+            exclusive rewards with every purchase.
             Discover a variety of nutritious options at your nearest Mostafa
             Groub outlet. Find the perfect blend for your health goals. Enjoy
             exclusive rewards with every purchase.
           </p>
           <div className="flex items-center gap-5 mt-8">
-            {socialMedia.map((icon) => (
-              <div
-                key={icon.src}
-                className="flex justify-center items-center w-12 h-12 bg-white rounded-full"
-              >
-                <img src={icon.src} alt={icon.alt} width={24} height={24} />
-              </div>
-            ))}
+            <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full">
+              <a href={socialMedia.linkedin} target="_blank" rel="noreferrer">
+                <FaLinkedin style={{ width: "24px", height: "24px" }} />
+              </a>
+            </div>
+            <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full">
+              <a href={socialMedia.facebook} target="_blank" rel="noreferrer">
+                <FaFacebookF style={{ width: "24px", height: "24px" }} />
+              </a>
+            </div>
           </div>
         </div>
         <div className="flex  justify-between lg:gap-10 gap-20 flex-wrap">
@@ -49,14 +55,26 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col flex-1 w-full">
+        <div className="flex  flex-col">
           <h4 className="text-white font-montserrat text-2xl leading-normal font-medium mb-6">
             Contact Us
           </h4>
-          <Contact />
+          <h3 className="text-white-400 font-montserrat text-base leading-normal flex  items-center mb-3">
+            <FaPhoneAlt className="text-white-400 font-montserrat text-base leading-normal mr-2" />
+            +201143275741
+          </h3>
+          <h3 className="text-white-400 font-montserrat text-base leading-normal flex  items-center mb-3">
+            <MdEmail className="text-white-400 font-montserrat text-base leading-normal mr-2" />
+            sales@iktefa.com
+          </h3>
+          <h3 className="text-white-400 font-montserrat text-base leading-normal flex  items-center">
+            <FaLocationDot className="text-white-400 font-montserrat text-base leading-normal mr-2" />
+            Cairo, Egypt
+          </h3>
+          {/* <Contact /> */}
         </div>
       </div>
-      <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center">
+      <div className="flex justify-between text-white-400 mt-20 max-sm:flex-col max-sm:items-center">
         <div className="flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer">
           <img
             src={copyrightSign}

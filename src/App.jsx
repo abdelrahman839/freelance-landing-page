@@ -8,18 +8,20 @@ const App = () => (
     <section className="xl:padding-l wide:padding-r padding-b">
       <Hero />
     </section>
-    <section className="padding">
+    {/* <section className="padding">
       <About />
-    </section>
+    </section> */}
+
     <section className="padding">
       <Products />
-    </section>
-    <section className="padding">
-      <Quote />
     </section>
     <section className="padding-x py-10">
       <Services />
     </section>
+    <section className="padding">
+      <Quote />
+    </section>
+
     <section className="padding bg-black padding-x padding-y pb-8">
       <Footer />
     </section>

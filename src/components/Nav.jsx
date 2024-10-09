@@ -3,6 +3,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import { FiMenu } from "react-icons/fi";
 import { logoDark, logoWhite } from "../assets/images";
 import { navLinks, socialMedia } from "../assets/constants/index.js";
+import { FaFacebookF, FaLinkedin } from "react-icons/fa";
 
 const Nav = () => {
   const [isSideMenuOpen, setMenu] = useState(false);
@@ -84,17 +85,30 @@ const Nav = () => {
               ))}
             </ul>
             <div>
-              <div className="flex w-fill items-center  justify-between mb-5">
-                {socialMedia.map((icon) => (
-                  <div
-                    key={icon.src}
-                    className="flex  justify-center items-center w-9 h-9 bg-white rounded-full"
+              <div className="flex w-fill items-center  justify-around mb-5">
+                <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full">
+                  <a
+                    href={socialMedia.linkedin}
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    <img src={icon.src} alt={icon.alt} width={24} height={24} />
-                  </div>
-                ))}
+                    <FaLinkedin
+                      style={{ width: "24px", height: "24px", color: "black" }}
+                    />
+                  </a>
+                </div>
+                <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full">
+                  <a
+                    href={socialMedia.facebook}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaFacebookF
+                      style={{ width: "24px", height: "24px", color: "black" }}
+                    />
+                  </a>
+                </div>
               </div>
-              {/* <img src={logoDark} alt="logo" width={200} height={10} /> */}
             </div>
           </section>
         </div>
