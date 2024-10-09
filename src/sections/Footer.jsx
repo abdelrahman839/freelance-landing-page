@@ -16,12 +16,12 @@ const Footer = () => {
           <p className="mt-6 text-base leading-7 font-montserrat text-white-400 ">
             Discover a variety of nutritious options at your nearest Mostafa
             Groub outlet. Find the perfect blend for your health goals. Enjoy
-            exclusive rewards with every purchase. Discover a variety of nutritious options at your nearest Mostafa
-            Groub outlet. Find the perfect blend for your health goals. Enjoy
-            exclusive rewards with every purchase.
-            Discover a variety of nutritious options at your nearest Mostafa
-            Groub outlet. Find the perfect blend for your health goals. Enjoy
-            exclusive rewards with every purchase.
+            exclusive rewards with every purchase. Discover a variety of
+            nutritious options at your nearest Mostafa Groub outlet. Find the
+            perfect blend for your health goals. Enjoy exclusive rewards with
+            every purchase. Discover a variety of nutritious options at your
+            nearest Mostafa Groub outlet. Find the perfect blend for your health
+            goals. Enjoy exclusive rewards with every purchase.
           </p>
           <div className="flex items-center gap-5 mt-8">
             <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full">
@@ -60,16 +60,17 @@ const Footer = () => {
             Contact Us
           </h4>
           <h3 className="text-white-400 font-montserrat text-base leading-normal flex  items-center mb-3">
-            <FaPhoneAlt className="text-white-400 font-montserrat text-base leading-normal mr-2" />
+            <FaPhoneAlt className="text-white-400 font-montserrat text-base leading-normal mr-2 size-5" />
             +201143275741
           </h3>
           <h3 className="text-white-400 font-montserrat text-base leading-normal flex  items-center mb-3">
-            <MdEmail className="text-white-400 font-montserrat text-base leading-normal mr-2" />
+            <MdEmail className="text-white-400 font-montserrat text-base leading-normal mr-2 size-5" />
             sales@iktefa.com
           </h3>
           <h3 className="text-white-400 font-montserrat text-base leading-normal flex  items-center">
-            <FaLocationDot className="text-white-400 font-montserrat text-base leading-normal mr-2" />
-            Cairo, Egypt
+            <FaLocationDot className="text-white-400 font-montserrat text-base leading-normal mr-2 size-5" />
+            West Park, Building E, Office 19 <br />
+            6th of October City, Giza, Egypt
           </h3>
           {/* <Contact /> */}
         </div>
