@@ -16,7 +16,7 @@ const Hero = () => {
             with Premium Dry Fruits{" "}
           </span>{" "}
         </h1>
-        <p className="font-montserrat text-slate-gray text-sm lg:text-lg leading-7 lg:leading-8 mt-3 lg:mt-6 lg:mb-14 sm:max-w-sm">
+        <p className="font-montserrat text-slate-gray text-sm lg:text-lg leading-6 lg:leading-8 mt-3 lg:mt-6 lg:mb-14 sm:max-w-sm">
           Delivering freshness and quality to your doorstep
         </p>
       </div>
