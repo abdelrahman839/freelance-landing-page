@@ -4,10 +4,10 @@ const Quote = () => {
   return (
     <section
       id="quote"
-      className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container"
+      className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container  max-sm:mt-12"
     >
       <div className="flex flex-1 flex-col">
-        <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
+        <h2 className="font-palanquin text-3xl lg:text-4xl capitalize font-bold lg:max-w-lg">
           <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-3">
             Send
           </span>

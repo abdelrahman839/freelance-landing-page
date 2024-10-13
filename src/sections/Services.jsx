@@ -3,9 +3,9 @@ import ServiceCard from "../components/ServiceCard";
 
 const Services = () => {
   return (
-    <section id="services">
+    <section id="services" className="max-container max-sm:mt-12">
       <div className="flex flex-1 flex-col mb-10">
-        <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
+        <h2 className="font-palanquin text-3xl lg:text-4xl  capitalize font-bold lg:max-w-lg">
           <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-3">
             Our
           </span>

@@ -11,7 +11,7 @@ const ProductCard = ({ imgURL, name, special }) => {
       <p className="font-montserrat text-xl leading-normal text-slate-gray">
         Nouriva
       </p>
-      <h3 className="mt-2 text-2xl leading-normal font-semibold font-palanquin">
+      <h3 className="mt-2  text-lg lg:text-xl leading-normal font-semibold font-palanquin">
         {name}
       </h3>
     </div>
