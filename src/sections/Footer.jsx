@@ -1,6 +1,6 @@
 import { footerLinks, socialMedia } from "../assets/constants";
 import { copyrightSign } from "../assets/icons";
-import { logoDark } from "../assets/images";
+import { logo } from "../assets/images";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin, FaFacebookF, FaLocationDot } from "react-icons/fa6";
@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
         <div className="flex flex-1 flex-col items-start">
           <a href="#home">
-            <img src={logoDark} width={250} height={46} alt="logo" />
+            <img src={logo} width={250} alt="logo" />
           </a>
           <p className="mt-6 text-base leading-7 font-montserrat text-white-400 ">
             Discover a variety of nutritious options at your nearest Mostafa

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { FiMenu } from "react-icons/fi";
-import { logoDark, logoWhite } from "../assets/images";
+import { logo } from "../assets/images";
 import { navLinks, socialMedia } from "../assets/constants/index.js";
 import { FaFacebookF, FaLinkedin } from "react-icons/fa";
 
@@ -32,12 +32,7 @@ const Nav = () => {
     >
       <nav className="flex lg:justify-between justify-between items-center max-container">
         <a href="#home">
-          <img
-            src={isScrolled ? logoDark : logoWhite}
-            alt="logo"
-            width={200}
-            height={10}
-          />
+          <img src={logo} alt="logo" width={120} />
         </a>
         <ul className="flex-1 flex justify-center items-center gap-28 max-lg:hidden">
           {navLinks.map((item) => (
