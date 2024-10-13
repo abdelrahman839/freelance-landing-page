@@ -7,7 +7,7 @@ const Hero = () => {
       className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
     >
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-36">
-        <h1 className="mt-7 font-palanquin text-3xl lg:text-4xl font-bold">
+        <h1 className="mt-2 lg:mt-7 font-palanquin text-3xl lg:text-4xl font-bold">
           <span className="xl:bg-white xl:whitespace-nowrap xl:pr-10 max-sm::p-0">
             Nourish Naturally
           </span>
