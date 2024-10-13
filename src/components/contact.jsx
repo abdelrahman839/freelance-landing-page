@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -8,7 +9,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
-
+  const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
@@ -19,26 +20,45 @@ const Contact = () => {
       ...form,
       [name]: value,
     });
+    setErrors({ ...errors, [name]: "" }); // Clear errors when typing
   };
-  console.log(form);
+
+  const validateForm = () => {
+    const newErrors = {};
+
+    if (!form.name.trim()) newErrors.name = "Name is required";
+    if (!form.phone.trim()) newErrors.phone = "Phone number is required";
+    if (!form.email.trim()) newErrors.email = "Email is required";
+    if (!form.message.trim()) newErrors.message = "Message is required";
+
+    setErrors(newErrors);
+
+    // If no errors exist, the form is valid
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      return; // Don't submit if the form is invalid
+    }
+
     setLoading(true);
 
     emailjs
       .send(
-        "service_wco8xrt",
-        "template_yjvrfus",
+        process.env.REACT_APP_SERVICE_NAME,
+        process.env.REACT_APP_SERVICE_TEMPLATE,
         {
-          form_type: "you got a new quate",
+          form_type: "you got a new quote",
           from_name: form.name,
-          to_name: "Mr Mostafa Group",
+          to_name: "Iktefa",
           from_email: form.email,
-          to_email: "abdelrahmanabdallah9800@gmail.com",
           message: form.message,
           phone: form.phone,
         },
-        "9A-nUTcJBhbGcoAKZ"
+        process.env.REACT_APP_SERVICE_KEY
       )
       .then(
         () => {
@@ -47,6 +67,7 @@ const Contact = () => {
 
           setForm({
             name: "",
+            phone: "",
             email: "",
             message: "",
           });
@@ -77,6 +98,9 @@ const Contact = () => {
               placeholder="Your Name"
               className="bg-white py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
             />
+            {errors.name && (
+              <span className="text-red-500 text-sm">{errors.name}</span>
+            )}
           </label>
           <label className="flex flex-col">
             <input
@@ -87,6 +111,9 @@ const Contact = () => {
               placeholder="Your Number"
               className="bg-white py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
             />
+            {errors.phone && (
+              <span className="text-red-500 text-sm">{errors.phone}</span>
+            )}
           </label>
           <label className="flex flex-col">
             <input
@@ -97,6 +124,9 @@ const Contact = () => {
               placeholder="E-Mail"
               className="bg-white py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
             />
+            {errors.email && (
+              <span className="text-red-500 text-sm">{errors.email}</span>
+            )}
           </label>
           <label className="flex flex-col">
             <textarea
@@ -107,6 +137,9 @@ const Contact = () => {
               placeholder="Your Message?"
               className="bg-white py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
             />
+            {errors.message && (
+              <span className="text-red-500 text-sm">{errors.message}</span>
+            )}
           </label>
 
           <button
