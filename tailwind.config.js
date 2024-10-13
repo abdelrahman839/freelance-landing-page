@@ -20,7 +20,7 @@ export default {
       },
       colors: {
         primary: "#ECEEFF",
-        "purple-900": "#3c2c5b",
+        "purple-900": "#04A394",
         "coral-red": "#FF6452",
         "slate-gray": "#6D6D6D",
         "pale-blue": "#F5F6FF",

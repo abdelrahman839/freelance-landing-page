@@ -212,7 +212,7 @@ export const footerLinks = [
     title: "Products",
     links: [
       { name: "Tomato Paste", href: "#products" },
-      { name: "Souces", href: "#products" },
+      { name: "Sauces", href: "#products" },
       { name: "Jam", href: "#products" },
     ],
   },
