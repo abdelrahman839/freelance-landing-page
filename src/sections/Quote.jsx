@@ -9,12 +9,12 @@ const Quote = () => {
       <div className="flex flex-1 flex-col">
         <h2 className="font-palanquin text-3xl lg:text-4xl capitalize font-bold lg:max-w-lg">
           <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-3">
-            Send
+            Request
           </span>
-          <span className="text-purple-900">a quote </span>
+          <span className="text-purple-900">Quote</span>
         </h2>
         <p className="mt-4 lg:max-w-lg info-text font-bold">
-          Why sending a quote?
+          Why requesting a quote?
         </p>
         <div className="mt-2">
           <ul className="list-disc ml-7">
@@ -22,11 +22,11 @@ const Quote = () => {
               Get pricing based on your exact requirements and quantities.
             </li>
             <li className=" info-text ">
-              Our knowledgeable team is available to assist you in selecting the
-              best products for your needs.
+              Receive a clear and detailed quote with no hidden fees.
             </li>
             <li className=" info-text ">
-              Receive a clear and detailed quote with no hidden fees.
+              Our team is available to assist you in selecting the best products
+              for your needs.
             </li>
           </ul>
         </div>

@@ -1,4 +1,11 @@
-import { support, truckFast, bag, face, category } from "../icons";
+import {
+  FaChalkboardTeacher,
+  FaIndustry,
+  FaShippingFast,
+  FaChartLine,
+} from "react-icons/fa";
+import { MdLightbulbOutline } from "react-icons/md";
+
 import {
   jam1,
   jam2,
@@ -28,7 +35,7 @@ export const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#products", label: "Products" },
   { href: "#services", label: "Services" },
-  { href: "#quote", label: "Send Quote" },
+  { href: "#quote", label: "Request Quote" },
   { href: "#footer", label: "Contact Us" },
 ];
 
@@ -82,58 +89,58 @@ export const products = [
     name: "Tomato paste 50 gm",
     category: "Tomato",
   },
-  // Sauces
+  // Condiments
   {
     id: 9,
     imgURL: sauce1,
     name: "BBQ bottle",
-    category: "Sauces",
-    special:true,
+    category: "Condiments",
+    special: true,
   },
   {
     id: 12,
     imgURL: sauce4,
     name: "ketchup bottle",
-    category: "Sauces",
-    special:true,
+    category: "Condiments",
+    special: true,
   },
   {
     id: 13,
     imgURL: sauce5,
     name: "Mayonnaise bottle",
-    category: "Sauces",
-    special:true,
+    category: "Condiments",
+    special: true,
   },
   {
     id: 15,
     imgURL: sauce7,
     name: "Mustard bottle",
-    category: "Sauces",
-    special:true,
+    category: "Condiments",
+    special: true,
   },
   {
     id: 10,
     imgURL: sauce2,
     name: "BBQ packet",
-    category: "Sauces",
+    category: "Condiments",
   },
   {
     id: 11,
     imgURL: sauce3,
     name: "ketchup packet",
-    category: "Sauces",
+    category: "Condiments",
   },
   {
     id: 14,
     imgURL: sauce6,
     name: "Mayonnaise packet",
-    category: "Sauces",
+    category: "Condiments",
   },
   {
     id: 16,
     imgURL: sauce8,
     name: "Mustard packet",
-    category: "Sauces",
+    category: "Condiments",
   },
   // Jam
   {
@@ -176,34 +183,35 @@ export const products = [
 
 export const services = [
   {
-    imgURL: truckFast,
-    label: "Wide Variety of Products",
+    icon: <FaChalkboardTeacher className="w-6 h-6 text-white" />,
+    label: "Consult",
     subtext:
-      "Offer a diverse selection of premium dry fruits including almonds, cashews, pistachios, raisins, dates, and more.",
+      "Tailored consulting services to optimize operations, improve quality, and increase profitability for food manufacturers.",
   },
   {
-    imgURL: face,
-    label: "Quality Assurance",
+    icon: <FaIndustry className="w-6 h-6 text-white" />,
+    label: "Manufacture",
     subtext:
-      "Ensure high-quality standards through rigorous sourcing and quality control processes to deliver fresh and flavorful dry fruits.",
+      "Efficient “Science-Based” Contract Manufacturing, ensuring premium quality and compliance for your food products with top confidentiality to your recipes.",
   },
   {
-    imgURL: support,
-    label: "Customizable Gift Baskets",
+    icon: <FaShippingFast className="w-6 h-6 text-white" />,
+    label: "Export",
     subtext:
-      "Provide options for customizable gift baskets or packages, perfect for special occasions or corporate gifts.",
+      "Find my Top 5 Potential Markets” is a game changing service; We offer seamless export solutions, handling logistics and regulations to expand your market globally.",
+  },
+
+  {
+    icon: <MdLightbulbOutline className="w-6 h-6 text-white" />,
+    label: "Innovate",
+    subtext:
+      "Drive product innovation and development with our expert R&D team, helping you stay ahead in the market.",
   },
   {
-    imgURL: category,
-    label: "Nutritional Information",
+    icon: <FaChartLine className="w-6 h-6 text-white" />,
+    label: "Invest",
     subtext:
-      " Provide detailed nutritional information for each product, helping customers make informed choices about their purchases.",
-  },
-  {
-    imgURL: bag,
-    label: "Customized Packaging",
-    subtext:
-      "Offer customizable packaging options for gift baskets or personal orders, ensuring a personalized touch for every occasion.",
+      "Empower your business with smart, tailored investment strategies that fuel growth and ensure long-term success, turning opportunities into tangible results.",
   },
 ];
 
@@ -212,7 +220,7 @@ export const footerLinks = [
     title: "Products",
     links: [
       { name: "Tomato Paste", href: "#products" },
-      { name: "Sauces", href: "#products" },
+      { name: "Condiments", href: "#products" },
       { name: "Jam", href: "#products" },
     ],
   },

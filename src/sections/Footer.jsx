@@ -14,14 +14,13 @@ const Footer = () => {
             <img src={logo} width={250} alt="logo" />
           </a>
           <p className="mt-6 text-base leading-7 font-montserrat text-white-400 ">
-            Discover a variety of nutritious options at your nearest Mostafa
-            Groub outlet. Find the perfect blend for your health goals. Enjoy
-            exclusive rewards with every purchase. Discover a variety of
-            nutritious options at your nearest Mostafa Groub outlet. Find the
-            perfect blend for your health goals. Enjoy exclusive rewards with
-            every purchase. Discover a variety of nutritious options at your
-            nearest Mostafa Groub outlet. Find the perfect blend for your health
-            goals. Enjoy exclusive rewards with every purchase.
+            Driven by our core values of integrity, quality, and customer
+            satisfaction, <span className="text-purple-900">Iktefa</span> aims
+            to create lasting partnerships with our clients, empowering them to
+            thrive in a competitive marketplace.
+            
+            <br /> <br />
+            Join us in our mission to nourish the world!
           </p>
           <div className="flex items-center gap-5 mt-8">
             <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full">

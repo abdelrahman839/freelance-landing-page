@@ -5,6 +5,7 @@ const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
+    company: "",
     phone: "",
     email: "",
     message: "",
@@ -27,6 +28,7 @@ const Contact = () => {
     const newErrors = {};
 
     if (!form.name.trim()) newErrors.name = "Name is required";
+    if (!form.company.trim()) newErrors.company = "Company is required"; 
     if (!form.phone.trim()) newErrors.phone = "Phone number is required";
     if (!form.email.trim()) newErrors.email = "Email is required";
     if (!form.message.trim()) newErrors.message = "Message is required";
@@ -53,6 +55,7 @@ const Contact = () => {
         {
           form_type: "you got a new quote",
           from_name: form.name,
+          company: form.company, // Added company data to the email
           to_name: "Iktefa",
           from_email: form.email,
           message: form.message,
@@ -67,6 +70,7 @@ const Contact = () => {
 
           setForm({
             name: "",
+            company: "", // Reset company field
             phone: "",
             email: "",
             message: "",
@@ -102,6 +106,22 @@ const Contact = () => {
               <span className="text-red-500 text-sm">{errors.name}</span>
             )}
           </label>
+
+          {/* Company Field */}
+          <label className="flex flex-col">
+            <input
+              type="text"
+              name="company"
+              value={form.company}
+              onChange={handleChange}
+              placeholder="Company Name"
+              className="bg-white py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium"
+            />
+            {errors.company && (
+              <span className="text-red-500 text-sm">{errors.company}</span>
+            )}
+          </label>
+
           <label className="flex flex-col">
             <input
               type="phone"

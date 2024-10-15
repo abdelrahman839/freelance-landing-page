@@ -4,7 +4,7 @@ import ProductCard from "../components/ProductCard";
 import { motion } from "framer-motion";
 
 const Products = () => {
-  const categories = ["Tomato", "Jam", "Sauces"];
+  const categories = ["Tomato", "Jam", "Condiments"];
   const [selectedCategory, setSelectedCategory] = useState("Tomato");
 
   // Filter products based on selected category

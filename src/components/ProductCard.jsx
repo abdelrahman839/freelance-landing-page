@@ -5,7 +5,7 @@ const ProductCard = ({ imgURL, name, special }) => {
         <img
           src={imgURL}
           alt={name}
-          className={special ? "w-[120px] h-[220px]" : "w-[280px] h-[280px]"}
+          className={special ? "w-[75px] h-[150px]" : "w-[200px] h-[200px]"}
         />
       </div>
       <p className="font-montserrat text-xl leading-normal text-slate-gray">
