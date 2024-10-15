@@ -8,17 +8,18 @@ import { FaLinkedin, FaFacebookF, FaLocationDot } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="max-container" id="footer">
+      <div className="flex flex-1 flex-col items-start">
+        <a href="#home">
+          <img src={logo} width={250} alt="logo" />
+        </a>
+      </div>
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
         <div className="flex flex-1 flex-col items-start">
-          <a href="#home">
-            <img src={logo} width={250} alt="logo" />
-          </a>
           <p className="mt-6 text-base leading-7 font-montserrat text-white-400 ">
             Driven by our core values of integrity, quality, and customer
             satisfaction, <span className="text-purple-900">Iktefa</span> aims
             to create lasting partnerships with our clients, empowering them to
             thrive in a competitive marketplace.
-            
             <br /> <br />
             Join us in our mission to nourish the world!
           </p>
