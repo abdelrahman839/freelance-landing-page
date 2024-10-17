@@ -3,7 +3,7 @@ import { hero as about } from "../assets/images";
 const About = () => {
   return (
     <section
-      id="about-us"
+      id="about"
       className="flex justify-between items-center max-lg:flex-col-reverse gap-10 w-full max-container "
     >
       <div className={`flex-1 flex justify-center items-center w-full `}>
@@ -34,9 +34,6 @@ const About = () => {
           <span className="text-purple-900">iktefa </span> is here to help you
           grow, save, and thrive in the global marketplace.
         </p>
-        {/* <p className="mt-6 lg:max-w-lg info-text">
-          Our dedication to detail and excellence ensures your satisfaction
-        </p> */}
       </div>
     </section>
   );
