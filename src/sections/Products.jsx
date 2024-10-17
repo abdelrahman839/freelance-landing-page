@@ -23,8 +23,7 @@ const Products = () => {
     <section id="products" className="max-container">
       <div className="flex flex-col justify-start gap-5">
         <h2 className="text-3xl lg:text-4xl font-palanquin font-bold">
-          Explore Our <span className="text-purple-900">Signature</span>{" "}
-          Selections
+          Our <span className="text-purple-900">Products</span>{" "}
         </h2>
         <p className="lg:max-w-lg mt-2 font-montserrat text-slate-gray">
           Indulge in superior taste and nutrition with our handpicked
@@ -32,8 +31,8 @@ const Products = () => {
         </p>
       </div>
 
-     {/* Category buttons */}
-     <div className="mt-8 flex justify-center gap-8">
+      {/* Category buttons */}
+      <div className="mt-8 flex justify-center gap-8">
         {categories.map((category) => (
           <button
             key={category}

@@ -24,6 +24,18 @@ const Nav = () => {
     };
   }, []);
 
+  const scrollToSection = (event, id) => {
+    event.preventDefault(); // Prevent default anchor behavior
+    const section = document.getElementById(id);
+    if (section) {
+      const sectionTop = section.getBoundingClientRect().top + window.scrollY - 100; // Adjusting for the offset
+      window.scrollTo({
+        top: sectionTop,
+        behavior: 'smooth' // Smooth scrolling
+      });
+    }
+  };
+
   return (
     <header
       className={`padding-x py-4 z-20 w-full fixed top-0 transition-all duration-300 ${
@@ -39,6 +51,7 @@ const Nav = () => {
             <li key={item.label}>
               <a
                 href={item.href}
+                onClick={(event) => scrollToSection(event, item.href.substring(1))} // Remove '#' for the id
                 className={`font-montserrat leading-normal text-lg ${
                   isScrolled ? "text-white" : "text-black"
                 } `}
@@ -72,6 +85,7 @@ const Nav = () => {
                 <li key={item.label} className="mb-7">
                   <a
                     href={item.href}
+                    onClick={(event) => scrollToSection(event, item.href.substring(1))} // Remove '#' for the id
                     className="font-montserrat leading-normal text-lg text-white"
                   >
                     {item.label}
@@ -80,7 +94,7 @@ const Nav = () => {
               ))}
             </ul>
             <div>
-              <div className="flex w-fill items-center  justify-around mb-5">
+              <div className="flex w-fill items-center justify-around mb-5">
                 <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full">
                   <a
                     href={socialMedia.linkedin}
