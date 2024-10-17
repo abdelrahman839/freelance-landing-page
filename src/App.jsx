@@ -1,14 +1,17 @@
 import Nav from "./components/Nav";
 import WhatsApp from "./components/WhatsApp";
-import { Hero, Products, Services, Footer, Quote } from "./sections";
+import { Hero, Products, Services, Footer, Quote, About } from "./sections";
 
 const App = () => (
   <main className="relative">
     <Nav />
-    <section className="xl:padding-l wide:padding-r padding-b ">
+    <section className="xl:padding-l wide:padding-r">
       <Hero />
     </section>
     <section className="padding-x">
+      <About />
+    </section>
+    <section className="padding">
       <Products />
     </section>
     <section className="padding">

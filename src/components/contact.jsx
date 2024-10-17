@@ -56,7 +56,7 @@ const Contact = () => {
           form_type: "you got a new quote",
           from_name: form.name,
           company: form.company, // Added company data to the email
-          to_name: "Iktefa",
+          to_name: "iktefa",
           from_email: form.email,
           message: form.message,
           phone: form.phone,

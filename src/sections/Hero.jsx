@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-36">
         <h1 className="mt-2 lg:mt-7 font-palanquin text-3xl lg:text-4xl font-bold">
           <span className="xl:bg-white xl:whitespace-nowrap xl:pr-10 max-sm::p-0">
-            Welcome to <span className="text-purple-900">Iktefa</span>
+            Welcome to <span className="text-purple-900">iktefa</span>
           </span>
         </h1>
         <p className="font-montserrat text-slate-gray text-sm lg:text-lg leading-6 lg:leading-8 mt-3 lg:mt-6 lg:mb-14 sm:max-w-sm">

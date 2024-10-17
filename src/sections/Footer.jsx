@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="flex flex-1 flex-col items-start">
           <p className="mt-6 text-base leading-7 font-montserrat text-white-400 ">
             Driven by our core values of integrity, quality, and customer
-            satisfaction, <span className="text-purple-900">Iktefa</span> aims
+            satisfaction, <span className="text-purple-900">iktefa</span> aims
             to create lasting partnerships with our clients, empowering them to
             thrive in a competitive marketplace.
             <br /> <br />
